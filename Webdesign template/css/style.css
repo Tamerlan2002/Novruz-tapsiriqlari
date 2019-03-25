@@ -1,0 +1,616 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+button {
+    background-color: rgb(257, 127, 12);
+    border-radius: 15px;
+    color: white;
+    border: 1px solid rgb(257, 127, 12);
+    letter-spacing: 0.2em;
+    width: 20%;
+}
+
+button:hover {
+    background-color: aqua;
+    border: 1px solid aqua;
+    transition: 0.3s ease
+}
+a{
+    color: #6c757d;
+}
+a:hover{
+    text-decoration: none;
+}
+button:focus {
+    outline: none;
+}
+
+header {
+    width: 100%;
+    height: 90vh;
+    background: url("https://images.wallpaperscraft.com/image/notebook_emptiness_old_table_pen_writing_80056_1366x768.jpg");
+    position: relative;
+}
+
+header .topnav {
+    margin: 0;
+    background-color: rgba(77, 190, 177, 0.74);
+    width: 100%;
+}
+
+header .topnav .left {
+    padding: 0.5% 5% 0.5% 15%;
+    color: white;
+}
+
+header .topnav .left a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    margin: 0 2%;
+}
+
+header .topnav .right {
+    color: white;
+    padding: 0.5% 5% 0.5% 15%;
+}
+
+header .topnav .right ul {
+    list-style-type: none;
+}
+
+header .topnav .right ul li {
+    float: left;
+    margin-left: 5%;
+}
+
+header .topnav .right ul li:hover {
+    cursor: pointer;
+}
+
+nav {
+    padding: 0 15%;
+    width: 100%;
+    background-color: white;
+}
+
+nav .logo {
+    font-size: 2rem;
+    color: rgb(238, 38, 38);
+    letter-spacing: -0.4rem
+}
+
+nav .navigation .firstul{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding-top: 3%;
+    font-size: 13px;
+    margin-bottom: 0;
+}
+
+nav .navigation .firstul li:nth-child(1) a {
+    color: orange;
+    padding-bottom: 1rem;
+}
+
+nav .navigation a {
+    position: relative;
+    float: left;
+    text-decoration: none;
+    color: inherit;
+    padding-bottom: 1rem;
+}
+nav .navigation .firstul li .afterhover{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.63);
+    margin-top: 7.1%;
+    width: 40%;
+    padding: 4% 0%;
+    display: none;
+}
+nav .navigation .firstul li .afterhover li{
+    display: block; 
+    width: 100%;
+    line-height: 2.5em;
+    color: white;
+    margin-left: 20%;
+}
+nav .navigation .firstul li .afterhover li:hover{
+    color:orange;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+nav .navigation .firstul li:hover .afterhover{
+    display: block;
+}
+nav .navigation a:hover {
+    color: orange;
+    transition: all ease 0.2s;
+}
+
+nav .sideicon {
+    padding: 1.5% 0 0 15%;
+}
+
+.sitefunct {
+    height: 3.5rem;
+    padding-top: 15%;
+}
+
+.sitefunct .toptext {
+    line-height: 5px;
+    clear: both;
+}
+
+.register button {
+    float: right;
+    width: 20%;
+    transition: all ease 0.3s;
+}
+
+.register button:hover {
+    background-color: aqua;
+    border: 1px solid aqua
+}
+
+.buybutton button {
+    width: 20%;
+    background-color: aqua;
+    border: 1px solid aqua;
+    transition: all ease 0.3s;
+}
+
+.buybutton button:hover {
+    background-color: rgb(257, 127, 12);
+    border: 1px solid rgb(257, 127, 12);
+}
+
+.navbottom {
+    padding: 0 15%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.363);
+    position: absolute;
+    bottom: 0px;
+}
+
+.navbottom .logo {
+    font-size: 2rem;
+    color: rgb(238, 38, 38);
+    letter-spacing: -0.4rem
+}
+
+.navbottom .navigation ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding-top: 3%;
+    font-size: 13px;
+}
+
+.navbottom .navigation ul li:nth-child(1) a {
+    color: orange
+}
+
+.navbottom .navigation a {
+    position: relative;
+    float: left;
+    text-decoration: none;
+    color: inherit;
+}
+
+.navbottom .navigation a:hover {
+    color: orange;
+    transition: all ease 0.2s;
+}
+
+.navbottom .sideicon {
+    padding: 1.5% 0 0 15%;
+}
+
+#abilities {
+    width: 100%;
+    background-color: #f6f6f6;
+}
+
+#abilities .circleforicon {
+    transform: translate(150%, 0%);
+    margin-top: 20%;
+    width: 25%;
+    height: 3.3rem;
+    font-size: 20px;
+    border-radius: 100%;
+    border: 1px solid lightgrey;
+}
+
+#abilities .equalparts p {
+    color: #626262;
+    margin-bottom: 2rem;
+}
+
+#abilities .equalparts:hover .circleforicon {
+    background-color: orange;
+    transition: 0.4s ease;
+}
+
+#abilities .equalparts:hover i {
+    color: white;
+    transition: 0.3s ease 0.2s
+}
+
+#features .leftside img {
+    float: right;
+}
+
+#features .rightside h2 {
+    margin-top: 15%;
+}
+
+#features .rightside .circleforicon {
+    height: 1.5rem;
+    text-align: center;
+    display: inline-block;
+    width: 4%;
+    border-radius: 50%;
+    font-size: 8px;
+    padding: 1% 0 0 0.3%;
+    color: orange;
+    border: 1px solid orange;
+    margin: 2% 4% 0 0;
+}
+
+#features .rightside button {
+    margin-top: 3%;
+}
+
+#doneworks {
+    clear: both;
+    width: 100%;
+    background-color: rgba(77, 190, 177);
+    color: white;
+}
+
+#doneworks .equalparts {
+    padding-top: 5%;
+    transform: translate(30%, 0%);
+    font-size: 30px;
+}
+
+#doneworks .equalparts span {
+    margin-left: 2%
+}
+
+#doneworks .equalparts p {
+    line-height: 40px;
+    font-size: 16px;
+    margin-left: 3%;
+    letter-spacing: 0.3em
+}
+
+#purchase {
+    clear: both;
+    width: 100%;
+    background: url("../images/Capture2.PNG");
+}
+
+#purchase h2 {
+    margin-top: 15%;
+}
+
+#purchase p {
+    line-height: 80px;
+}
+
+#purchase .forbutton {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 14%
+}
+
+#purchase button {
+    width: 18%;
+    border-radius: 30px;
+    padding: 1% 0;
+    letter-spacing: 0.5em;
+}
+
+#gallery .upperpart p {
+    line-height: 300%;
+    letter-spacing: 0.5em;
+}
+
+.bottombordered {
+    display: inline-block;
+    width: 10%;
+    border: 2px solid orange;
+    transform: translate(450%, 0%);
+    margin-bottom: 10%;
+}
+
+#gallery .bottompart .imagekeeper {
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+#gallery .bottompart .hidden {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(17, 16, 16, 0.541);
+    opacity: 0;
+}
+
+#gallery .bottompart .hidden h5 {
+    color: orange;
+    margin-top: 25%
+}
+
+#gallery .bottompart .imagekeeper:hover .hidden {
+    opacity: 1;
+    transition: ease 0.2s
+}
+
+#gallery .button {
+    display: flex;
+    justify-content: center;
+    margin: 7% 0;
+}
+
+#gallery .button button {
+    color: #9b9797;
+    background-color: white;
+    border: 1px solid #9b9797;
+    width: 10%
+}
+
+#gallery .button button:hover {
+    background-color: orange;
+    border: 1px solid orange;
+    color: white;
+    transition: ease 0.3s;
+}
+
+#blog {
+    background-color: #f6f6f6;
+}
+
+#blog .upperpart p {
+    line-height: 300%;
+    letter-spacing: 0.5em;
+}
+
+#blog .bottompart ul li i {
+    font-size: 20px;
+    color: rgb(255, 123, 0);
+}
+
+#blog .bottompart p {
+    font-size: 13px;
+    letter-spacing: 0.5em;
+    color: #626262
+}
+
+.fa-quote-right {
+    margin-top: 2%;
+}
+
+#blog .bottompart ul li:hover p {
+    color: white;
+    transition: 1s ease
+}
+
+#blog .bottompart ul li:nth-child(1):hover {
+    background: url("https://images.pexels.com/photos/1531677/pexels-photo-1531677.jpeg?cs=srgb&dl=ancient-angkor-wat-antique-1531677.jpg&fm=jpg");
+    color: white;
+    transition: 1s ease;
+}
+
+#blog .bottompart ul li:nth-child(2):hover {
+    background: url("https://images.pexels.com/photos/8892/pexels-photo.jpg?cs=srgb&dl=floor-gray-grey-8892.jpg&fm=jpg");
+    color: white;
+    transition: 1s ease;
+}
+
+#blog .bottompart ul li:nth-child(3):hover {
+    background: url("https://images.pexels.com/photos/35435/pexels-photo.jpg?cs=srgb&dl=animal-bear-brown-bear-35435.jpg&fm=jpg");
+    color: white;
+    transition: 1s ease;
+}
+
+#blog .button {
+    display: flex;
+    justify-content: center;
+    padding: 7% 0;
+}
+
+#blog .button button {
+    width: 10%
+}
+
+#companynames .imagekeeper {
+    width: 20%;
+    height: 5rem;
+}
+
+#companynames {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 7.5%;
+}
+
+#usermap {
+    position: relative;
+}
+
+.inputform {
+    background-color: rgba(77, 190, 177);
+    width: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 99.5%;
+}
+
+.inputform input {
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-bottom: 2px solid white;
+    color: white
+}
+
+.inputform textarea {
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-bottom: 2px solid white;
+    color: white
+}
+
+.inputform input::placeholder {
+    color: white;
+}
+
+.inputform textarea::placeholder {
+    color: white;
+}
+
+.inputform input:focus {
+    outline: none;
+}
+
+.inputform textarea:focus {
+    outline: none;
+}
+
+#email {
+    margin-left: 15%;
+}
+
+.inputform .sendbutton:hover {
+    background-color: transparent;
+    border: 1px solid white;
+    transition: 0.3s ease
+}
+
+#socmedia {
+    display: flex;
+    background-color: rgb(55, 55, 55);
+    width: 100%;
+    justify-content: flex-end;
+}
+
+#socmedia .logokeeper {
+    width: 20%;
+    float: left;
+    background-color: rgb(55, 55, 55);
+    height: 7rem;
+}
+
+#socmedia .logokeeper:nth-of-type(n+1) {
+    border-right: 1px solid rgba(46, 44, 44, 0.596);
+    border-left: 1px solid rgba(46, 44, 44, 0.596);
+}
+
+#socmedia .logokeeper p {
+    color: white;
+    transform: translate(0%, 170%);
+    display: inline-block;
+    font-size: 16px;
+    letter-spacing: 0.5em;
+}
+
+#socmedia .logokeeper i{
+    font-size: 18px;
+    width: 15%;
+    transform: translate(0%, 110%);
+    border-radius: 50%;
+    margin-right: 2%;
+    color: #626262;
+    border: 1px solid #626262;
+    padding: 4% 5%;
+    margin-left: 10%;
+}
+#socmedia .logokeeper:nth-child(1):hover{
+    background-color: rgb(71, 71, 160);
+}
+#socmedia .logokeeper:nth-child(2):hover{
+    background-color: rgb(52, 177, 177)
+}
+#socmedia .logokeeper:nth-child(3):hover{
+    background-color: rgb(35, 218, 111)
+}
+#socmedia .logokeeper:nth-child(4):hover{
+    background-color: rgb(224, 91, 113)
+}
+#socmedia .logokeeper:nth-child(5):hover{
+    background-color: rgb(83, 83, 211);
+}
+#socmedia .logokeeper:hover{
+    transition: 0.4s ease;
+    cursor: pointer;
+}
+#socmedia .logokeeper:hover i{
+    color: white;
+    transition: 0.2s ease;
+    border-color: white;
+}
+footer{
+    background-color: rgb(52, 52, 52);
+}
+footer .logopart h3{
+    color: rgb(238, 38, 38);
+    letter-spacing: -0.25em;
+    margin-left: 15%;
+    margin-top: 20%;
+}
+footer ul{
+    list-style-type: none;
+    margin-top: 11%
+}
+footer .contact ul li{
+    margin-top: 10%;
+    font-size: inherit;
+}
+footer .upper h5{
+    color: white;
+    margin-top: 22%;
+    margin-left:15% 
+
+}
+footer ul li{
+    line-height: 35px;
+    font-size: 14px;
+}
+footer .linkspart ul li a:hover, footer .aboutpart ul li a:hover{
+    color: orange;
+    transition: 0.3s ease
+}
+footer .photopart h5{
+    margin-left: -5%;
+}
+footer .bottomphoto{
+    margin-top: 19.5%;
+}
+footer .bottomphoto .imagekeeper{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 4.5rem
+}
+footer .bottomphoto .imagekeeper img{
+    width: 100%;
+    height: 100%
+}
+footer .afterhr{
+    letter-spacing: 0.5em;
+    padding-bottom: 2%;
+}

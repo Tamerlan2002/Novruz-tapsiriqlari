@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <style>
+        p {
+            font-weight: bold;
+            margin-bottom: 0;
+            margin-top: 5%;
+        }
+
+        input {
+            width: 100%;
+            border-radius: 5px;
+            border: 1px solid rgb(209, 200, 200);
+            padding: 1% 0 1% 1%
+        }
+    </style>
+    <h2 class="text-center mt-5 mb-2">Welcome to Code Academy</h2>
+    <div class="container intro">
+        <div class="alert alert-primary" role="alert">
+            <p class="text-center mb-0 mt-0 ">Nizami kucesi 203B, AF Businnes House, 2-ci mertebe</p>
+        </div>
+        <h3>
+            information about Code Academy
+        </h3>
+        <h6 id="studentCount"></h6>
+        <h6 id="teacherCount"></h6>
+        <h6 id="groupCount"></h6>
+        <h6 id="roomCount"></h6>
+
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <div class="student pl-5 pr-5" style="border:2px solid lightblue; border-radius: 5px;">
+                    <h4 class="py-2 text-center">Student</h4>
+                    <p>Name</p>
+                    <input type="text" id="nameIn" placeholder="Name">
+                    <p>Surname</p>
+                    <input type="text" id="surnameIn" placeholder="Surname">
+                    <p>Email</p>
+                    <input type="email" id="emailIn" placeholder="Email">
+
+                    <h4 class="pt-4">Adress</h4>
+                    <p>Street</p>
+                    <input type="text" id="streetIn" placeholder="Street">
+                    <p>City</p>
+                    <input type="text" id="cityIn" placeholder="City">
+                    <p>Country</p>
+                    <input type="text" id="countryIn" value="Azerbaijan" readonly class="mb-3">
+                    <button type="button" class="btn btn-outline-info mb-3" onclick="addStudent()">Save</button>
+                    <div id="showStudentHere" class="mb-3"></div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="room pl-5 pr-5" style="border:2px solid lightblue; border-radius: 5px;">
+                    <h4 class="py-2 text-center">Room</h4>
+                    <p>Name</p>
+                    <input type="text" id="roomName" placeholder="Room Name">
+                    <p>Capacity</p>
+                    <input type="text" id="capacityIn" placeholder="Capacity" class="mb-3">
+                    <button type="button" class="btn btn-outline-info mb-3" onclick="addRoom()">Save</button>
+                    <div id="showRoomsHere "></div>
+                </div>
+                <div class="group mt-3 pl-5 pr-5" style="border:2px solid lightblue; border-radius: 5px;">
+                    <div>
+                        <h4 class="py-2 text-center">Group</h4>
+                        <p>Name</p>
+                        <input type="text" id="roomName" placeholder="Room Name">
+                        <p>Capacity</p>
+                        <input type="text" id="capacityIn" placeholder="Capacity" class="mb-3">
+                        <button type="button" class="btn btn-outline-info mb-3">Save</button>
+                    </div>
+                </div>
+                <div class="teacher mt-3 pl-5 pr-5" style="border:2px solid lightblue; border-radius: 5px;">
+                    <h4 class="py-2 text-center">Teacher</h4>
+                    <p>Name</p>
+                    <input type="text" id="teacherName" placeholder="Name">
+                    <p>Surname</p>
+                    <input type="text" id="teacherSurname" placeholder="Surname">
+                    <p>Email</p>
+                    <input type="email" id="teacherEmail" placeholder="Email" class="mb-3">
+                    <button type="button" class="btn btn-outline-info mb-3">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

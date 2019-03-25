@@ -1,0 +1,92 @@
+@media screen and (max-width: 768px){
+    .navigation{
+        display:none
+    }
+    .sideicon{
+        margin: 0%;
+        padding: 0;
+    }
+}
+@media screen and (max-width: 992px){
+    nav ul li{
+        display: none
+    }
+    .sideicon{
+        margin: 0%;
+        padding: 0;
+    }
+}
+@media  screen and (max-width: 768px){
+    .register{
+        display: flex;
+        justify-content: center
+    }
+    .buybutton{
+        display: flex;
+        margin-top: 2%;
+        justify-content: center
+    }
+}
+@media screen and (max-width:768px){
+    .register button{
+        width: 30%
+    }
+    .buybutton button{
+        width: 30%
+    }
+}
+@media screen and (min-width:768px) and (max-width:992px){
+    .register button{
+        width: 40%
+    }
+    .buybutton button{
+        width: 40%
+    }
+}
+@media screen and (max-width:769px){
+    #features .rightside h2{
+        margin-top: 0;
+        text-align: center;
+    }
+}
+@media screen and (max-width:992px){
+    #features button{
+        margin-bottom: 5%;
+        text-align: center;
+    }
+}
+@media screen and (max-width:768px){
+    #purchase button{
+        width: 50%;
+    }
+}
+@media screen and (min-width:768px) and (max-width:992px){
+    #purchase button{
+        width: 25%;
+    }
+}
+@media screen and (max-width:768px){
+    #gallery .button button{
+        width: 22%
+    }
+}
+@media screen and (max-width:768px){
+    #blog .button button{
+        width: 22%
+    }
+}
+@media screen and (max-width:768px){
+    #email{
+        margin-left: 5.5%
+    }
+}
+@media screen and (min-width:768px) and (max-width:992px){
+    #email{
+        margin-left:0%
+    }
+}
+@media screen and (min-width:992px) and (max-width:1200px){
+    #email{
+        margin-left: 30%
+    }
+}

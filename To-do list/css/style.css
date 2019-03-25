@@ -1,0 +1,14 @@
+#listInput{
+    margin-left: 9.4%;
+    margin-top: 2%;
+}
+#writings{
+    padding: 3% 0% 5% 2%;
+    height: 300px;
+    overflow: scroll;
+}
+ul li{
+    color: blueviolet;
+    padding-top: 1%;
+    font-size: 25px;
+}
